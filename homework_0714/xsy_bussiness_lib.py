@@ -4,7 +4,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-from homework_0714.xsy_object_ui import LOGIN_LINK, LOGIN_USER, LOGIN_PWD, LOGIN_BTN,\
+from python.homework_0714.xsy_object_ui import LOGIN_LINK, LOGIN_USER, LOGIN_PWD, LOGIN_BTN,\
     CREATE_API,CREATE_API_NAME,SELECT_PORT,CREATE_API_PATH,CREATE_API_SAVEBTN,CREATE_API_BODYRAW,\
     CREATE_API_VALUEASSIGNMENT,CREATE_API_RAWCONTENT,CREATE_API_RAWCONTENT_SAVEBTN,CREATE_API_RUNBTN,CREATE_API_RUN_URL
 

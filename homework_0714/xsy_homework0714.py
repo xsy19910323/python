@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 import unittest, time
 
-from homework_0714.xsy_bussiness_lib import UI_uinittest
+from python.homework_0714.xsy_bussiness_lib import UI_uinittest
 
 
 class UntitledCase(unittest.TestCase):
