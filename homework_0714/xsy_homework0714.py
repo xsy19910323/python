@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
 
 from selenium import webdriver
+from selenium.webdriver import DesiredCapabilities
 
 from selenium.webdriver.common.by import By
 
 import unittest, time
 
-from python.homework_0714.xsy_bussiness_lib import UI_uinittest
+from py0714study.xsy_bussiness_lib import UI_uinittest
 
 
 class UntitledCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.driver = webdriver.Firefox()
+        # self.driver = webdriver.Firefox()
+        selenium_grid_url = "http://172.16.76.45:4444/wd/hub"  # 可以理解为测试环境 ，我这里表示在本地执行，把ip更改后就可以到对应的ip地址中运行
+        capabilities = DesiredCapabilities.CHROME
+        self.driver = webdriver.Remote(desired_capabilities=capabilities, command_executor=selenium_grid_url)
 
     @classmethod
     def tearDownClass(self):
